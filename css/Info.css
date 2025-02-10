@@ -1,0 +1,128 @@
+
+/* Content Wrapper */
+.content-wrapper {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin: 0 auto;
+}
+
+.box-body p{
+    font-size: 20px;
+}
+
+/* Box Styles */
+.box {
+    border: none;
+}
+
+.box-header {
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.box-header_2 {
+    margin-left: 15px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.box-body {
+    padding: 15px;
+}
+
+/* Form Styles */
+.form-horizontal {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group_2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group_2 label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea.form-control {
+    height: 120px;
+    resize: vertical;
+}
+
+input[type="file"].form-control {
+    padding: 5px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-default {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    margin-bottom: 5px;
+}
+
+.btn-default:hover, .btn-info:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}

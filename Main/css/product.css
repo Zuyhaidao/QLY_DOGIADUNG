@@ -1,0 +1,219 @@
+/* Đặt nền trắng và chỉnh font */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Container chính, chia 2 cột */
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bố cục cho phần hình ảnh bên trái */
+.left-section {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    overflow: hidden; /* Ẩn phần ảnh bị tràn */
+}
+
+
+/* Khung cho hình ảnh */
+.image-frame {
+    border: 5px solid #c1baba; /* Màu sắc và độ dày của viền */
+    border-radius: 15px; /* Bo tròn góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    padding: 10px; /* Khoảng cách giữa viền và ảnh */
+    background-color: #fff; /* Màu nền cho khung */
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 630px; /* Đặt chiều cao của khung giống như chiều cao của ảnh */
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của khung */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao của khung */
+    object-fit: contain; /* Đảm bảo ảnh hiển thị đầy đủ mà không bị cắt bớt */
+    object-position: center; /* Căn giữa hình ảnh */
+    display: block; /* Đặt hiển thị hình ảnh là block để căn giữa */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* Khung cho hình ảnh */
+.image-frame {
+    border: 5px solid #c1baba; /* Màu sắc và độ dày của viền */
+    border-radius: 15px; /* Bo tròn góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    padding: 10px; /* Khoảng cách giữa viền và ảnh */
+    background-color: #fff; /* Màu nền cho khung */
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+    width: 80%; /* Đặt chiều rộng 100% */
+    height: 630px; /* Đặt chiều cao cố định cho ảnh */
+    object-fit: contain; /* Đảm bảo ảnh hiển thị đầy đủ mà không bị cắt bớt */
+    object-position: center; /* Căn giữa hình ảnh */
+}
+
+/* Bố cục cho phần chi tiết sản phẩm bên phải */
+.right-section {
+    flex: 1;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Thiết kế cho tiêu đề sản phẩm */
+.product-title {
+    font-size: 40px; /* Tăng cỡ chữ cho tiêu đề */
+    font-weight: 600; /* Chỉnh lại độ đậm của chữ */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Chỉnh sửa cho phần Thành tiền */
+.price-total {
+    display: flex; /* Đặt chế độ hiển thị là flex để các phần tử nằm cùng một dòng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px; /* Khoảng cách từ phần trên */
+    margin-bottom: 20px;
+}
+
+.description, .notebox-title, .thanhtien {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.price {
+    font-size: 22px; /* Cỡ chữ cho giá */
+    margin-left: 30px;
+    font-weight: bold; 
+    color: #c66b6b; /* Màu sắc cho giá */
+}
+
+/* Thiết kế cho giá sản phẩm */
+.product-price {
+    font-size: 22px; /* Tăng cỡ chữ cho giá */
+    color: #c66b6b; /* Màu giá chính */
+    font-weight: bold;
+}
+
+.description{
+    margin: 0;
+}
+
+/* Mô tả sản phẩm */
+.product-description {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px; /* Cỡ chữ mô tả */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+    color: #666;
+}
+
+/* Khu vực tùy chọn sản phẩm */
+.product-options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Bộ điều chỉnh số lượng sản phẩm */
+.quantity-selector {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-selector button {
+    width: 83px;
+    height: 30px;
+    background-color: #c66b6b;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600; /* Đậm chữ */
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+}
+.quantity-selector button:hover{
+    background-color: #e23b3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.quantity-selector input {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Nút hành động (thêm vào giỏ hàng, mua ngay) */
+.product-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+ .modal-footer-control button{
+    background-color: #c66b6b; /* Màu khác cho nút mua ngay */
+    border-radius: 25px; /* Bo tròn nút */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase; /* Chữ in hoa cho nút */
+    font-weight: 600; /* Đậm chữ */
+    height: 50px;
+}
+.modal-footer-control button:hover{
+    background-color: #e23b3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-footer-control {
+    display: flex; /* Thiết lập chế độ hiển thị là flex */
+    justify-content: center; /* Căn giữa các nút theo chiều ngang */
+    gap: 50px; /* Khoảng cách giữa các nút */
+    margin-top: 10px; /* Khoảng cách từ trên xuống */
+}
+
+.text-note {
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    height: 150px;
+    width: 95%;
+}
+
+.current-price{
+    margin-left: 20px;
+}
+
+/* Đáp ứng (Responsive) cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}

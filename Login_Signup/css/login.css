@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.form-toggle-buttons {
+    margin-top: 130px;
+    margin-right: 310px;
+    height: 55px;
+    
+}
+
+.form-toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    background: #c66b6b; /* Base color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners for a pill shape */
+    padding: 12px 24px; /* Padding for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    outline: none; /* Remove outline */
+}
+
+/* Hover effect */
+.toggle-button:hover {
+    background: #b55b5b; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Active state */
+.toggle-button.active {
+    background: #b55b5b; /* Darker background for active button */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .toggle-button {
+        font-size: 14px; /* Smaller font size on mobile */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.header-background {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* dán tiêu đề lên đầu */
+    top: 0;
+    z-index: 1000; /* đè lên nội dung khác */
+}
+
+.header {
+    margin-left: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title {
+    color: #222;
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.help_service {
+    color: #222;
+    font-size: 15px;
+    margin-left: 1050px;
+}
+
+.logo_1 {
+    height: 84px;
+    display: flex;
+    justify-content: right;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px); /* Chiều cao tiêu đề */
+}
+
+.left-section {
+    flex: 1;
+    height: 100vh;
+    background-color: #c66b6b;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding: 40px; 
+}
+
+.logo-content {
+    text-align: center;
+    margin-left: -39px;
+    margin-top: 92px;
+}
+
+.logo-content img {
+    width: 280px; 
+    margin-bottom: -20px; 
+}
+
+.left-section h1 {
+    font-size: 48px; 
+    font-weight: bold;
+    margin: 5px 0; 
+}
+
+.left-section p {
+    font-size: 20px; 
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 10px; 
+}
+
+.right-section {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c66b6b;
+}
+
+.form-content {
+    width: 490px;
+    margin-top: 122px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #c66b6b;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 115px;
+}
+
+.form-label {
+    margin-bottom: 5px; /* Khoảng cách dưới label */
+    font-weight: 600; /* Chữ đậm cho label */
+    color: #555; /* Màu chữ cho label */
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #c66b6b; /* Đổi màu viền khi focus */
+}
+
+.form-submit {
+    width: 100%;
+    height: 45px;
+    background-color: #c66b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-submit:hover {
+    background-color: #b55b5b;
+    transform: translateY(-2px); /* Hiệu ứng nhấc lên khi hover */
+}
+
+.change-login {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.change-login a {
+    color: #c66b6b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.change-login a:hover {
+    color: #b55b5b;
+}
+
+.form-toggle-buttons {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+    margin-left: 310px;
+}
+
+.toggle-button {
+    background-color: #fafafa;
+    color: #c66b6b;
+    border: 1px solid #c66b6b;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Thêm hiệu ứng chuyển đổi */
+    margin: 0 10px;
+}
+
+.toggle-button:hover {
+    background-color: #c66b6b;
+    color: white;
+    transform: translateY(-2px); /* Hiệu ứng nhấc lên khi hover */
+}
+
+.toggle-button.active {
+    background-color: #c66b6b;
+    color: white;
+    border: none;
+}

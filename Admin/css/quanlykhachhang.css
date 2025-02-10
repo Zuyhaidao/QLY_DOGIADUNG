@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 35px;
+    line-height: 1.6;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-wrapper:hover {
+    transform: scale(1.01);
+}
+
+/* Header */
+.box-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.box-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000000;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table td {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}

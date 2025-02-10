@@ -1,0 +1,27 @@
+.header-top {
+    background-color: #c66b6b;
+    height: 30px;
+    width: 100%;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top-list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-top-list a {
+    color: white;
+    font-size: 14px;
+}
+
+.header-top-list a i {
+    margin-right: 4px;
+}

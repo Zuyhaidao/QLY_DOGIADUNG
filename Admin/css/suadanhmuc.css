@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 75%; /* Đặt chiều rộng */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto; /* Căn giữa với margin tự động */
+}
+
+.content-wrapper:hover {
+    transform: scale(1.01);
+}
+
+/* Box Styles */
+.box {
+    border: none;
+}
+
+.box-header {
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px; /* Thêm border-radius để bo tròn */
+}
+
+.box-body {
+    padding: 15px;
+}
+
+/* Form Styles */
+.form-horizontal {
+    margin-top: 10px; 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px; /* Tăng padding cho gọn và thoải mái */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea.form-control {
+    height: 120px; 
+    resize: vertical;
+}
+
+.input[type="file"].form-control {
+    padding: 5px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 25px; /* Tăng kích thước nút bấm */
+    border: none;
+    border-radius: 8px; /* Tăng độ cong */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-default {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    margin-left: 1000px;
+    margin-right: 10px;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.btn-default:hover, .btn-info:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .form-control {
+        font-size: 12px; /* Thay đổi kích thước chữ cho màn hình nhỏ */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Thay đổi kích thước nút bấm */
+    }
+}

@@ -1,0 +1,54 @@
+.wrapper {
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: left;
+    overflow: hidden; /* Đảm bảo không có thanh cuộn */
+}
+
+.display-area {
+    overflow: hidden;
+    width: 100%;
+    height: 490px;
+    margin: 0 auto;
+}
+
+.wrap {
+    display: flex; /* Sử dụng flexbox để sắp xếp ảnh theo hàng */
+    width: 300%; /* Tổng chiều rộng để chứa 3 ảnh */
+    animation: slideShow 10s infinite;
+}
+
+.image {
+    width: 33.33%; /* Mỗi ảnh chiếm 1/3 chiều rộng */
+    height: 490px; /* Đảm bảo chiều cao ảnh đúng */
+    display: flex;
+    justify-content: center; /* Căn giữa ảnh */
+    align-items: center; /* Căn giữa ảnh */
+}
+
+.image img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của khung */
+    height: auto; /* Giữ tỉ lệ của ảnh */
+}
+
+@keyframes slideShow {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    60% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}

@@ -1,0 +1,45 @@
+.header-bottom{ 
+    transition: transform 0.6s ease;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+    z-index: 4;
+}
+.menu-list {
+    display: flex;
+    height: 49px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.menu-link {
+    color: black;
+    display: inline-block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 15px;
+}
+
+.menu-link:hover::after {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.menu-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: visibility 0.3s, transform 0.3s, opacity 0.3s;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #c66b6b;
+    transition: all 0.3s ease;
+}

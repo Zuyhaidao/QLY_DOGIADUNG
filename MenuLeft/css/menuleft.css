@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+  
+  /* CSS cho icon menu */
+   .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* CSS cho menu ẩn/hiện */
+.sidebar {
+    margin-top: 150px;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    background-color: #fff;
+    color: white;
+    transition: left 0.3s;
+    padding-top: 50px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #c66b6b;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.submenu a {
+    font-size: 0.9em;
+}
+
+/* Menu hiện ra khi có class "active" */
+.sidebar.active {
+    left: 0;
+}
+
+/* CSS cho nút đóng */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
